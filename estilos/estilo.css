@@ -1,0 +1,45 @@
+.padre{
+    padding: 5px;
+    background-color:azure;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "header header header"
+                         "nav nav nav"
+                         "cont1 cont2 cont3"
+                         "cont1 cont2 cont3"
+                         "foot foot cont3"
+    ;
+}
+.padre .header{
+    grid-area:header;
+    text-align: center;
+
+}
+.padre .nav{
+    grid-area:nav;
+
+}
+.padre .cont1{
+    grid-area:cont1;
+
+}
+.padre .cont2{
+    grid-area:cont2;
+    
+
+}
+.padre .cont2 .accordion-body{
+    text-align: justify;
+    
+
+}
+
+.padre .cont3{
+    grid-area:cont3;
+
+}
+
+.padre .foot{
+    grid-area:foot;
+}

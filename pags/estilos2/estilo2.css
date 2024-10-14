@@ -1,0 +1,36 @@
+.padre{
+    padding: 5px;
+    background-color:azure;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 3fr 2fr 1fr;
+    grid-template-areas: "header nav nav"
+                         "cont1 cont1 cont1"
+                         "cont2 cont2 cont2"
+                        ;
+}
+
+.padre .header{
+    text-align: center;
+    grid-area: header;
+}
+.padre .nav{
+    grid-area:nav;
+
+}
+.padre .cont1{
+    
+    grid-area:cont1;  
+}
+.padre .cont1 .card-text{
+    padding: 50px;
+    text-align: justify;
+}
+.padre .cont2{
+    grid-area:cont2;  
+}
+.padre .cont2 .card-text{
+    text-align: justify;
+}
+
+
